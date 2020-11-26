@@ -1,4 +1,4 @@
-module github.com/pantyukhov.p/go-queryset
+module github.com/pantyukhov/go-queryset
 
 require (
 	cloud.google.com/go v0.37.0 // indirect
