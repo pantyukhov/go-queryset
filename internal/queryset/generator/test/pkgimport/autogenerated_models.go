@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/jinzhu/gorm"
 	forex "github.com/pantyukhov/go-queryset/internal/queryset/generator/test/pkgimport/forex/v1"
+	"gorm.io/gorm"
 )
 
 // ===== BEGIN of all query sets

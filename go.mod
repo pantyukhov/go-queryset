@@ -18,8 +18,6 @@ require (
 	github.com/googleapis/gax-go v2.0.0+incompatible // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.5.0 // indirect
-	github.com/jinzhu/gorm v1.9.2
-	github.com/jinzhu/inflection v0.0.0-20170102125226-1c35d901db3d // indirect
 	github.com/jinzhu/now v1.1.1 // indirect
 	github.com/lib/pq v1.0.0 // indirect
 	github.com/mattn/go-sqlite3 v1.14.5 // indirect
@@ -55,11 +53,12 @@ require (
 	github.com/shurcooL/webdavfs v0.0.0-20170829043945-18c3829fa133 // indirect
 	github.com/sourcegraph/annotate v0.0.0-20160123013949-f4cad6c6324d // indirect
 	github.com/sourcegraph/syntaxhighlight v0.0.0-20170531221838-bd320f5d308e // indirect
-	github.com/stretchr/testify v1.5.1
+	github.com/stretchr/testify v1.6.1
 	golang.org/x/build v0.0.0-20201125004639-2e05377d7423 // indirect
 	golang.org/x/crypto v0.0.0-20201124201722-c8d3bf9c5392 // indirect
 	golang.org/x/tools v0.0.0-20201110124207-079ba7bd75cd
 	gopkg.in/DATA-DOG/go-sqlmock.v1 v1.2.0
+	gorm.io/gorm v1.20.7
 	sourcegraph.com/sourcegraph/go-diff v0.5.0 // indirect
 )
 
