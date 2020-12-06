@@ -304,7 +304,7 @@ func NewDeleteNumMethod(qsTypeName, structTypeName string) DeleteNumMethod {
 	return DeleteNumMethod{
 		namedMethod:        newNamedMethod("DeleteNum"),
 		baseQuerySetMethod: newBaseQuerySetMethod(qsTypeName),
-		constRetMethod:     newConstRetMethod("(uuid.UUID, error)"),
+		constRetMethod:     newConstRetMethod("(int64, error)"),
 		constBodyMethod: newConstBodyMethod(
 			strings.Join([]string{
 				"db := qs.db.Delete(" + structTypeName + "{}" + ")",
@@ -329,7 +329,7 @@ func NewDeleteNumUnscopedMethod(qsTypeName, structTypeName string) DeleteNumUnsc
 	return DeleteNumUnscopedMethod{
 		namedMethod:        newNamedMethod("DeleteNumUnscoped"),
 		baseQuerySetMethod: newBaseQuerySetMethod(qsTypeName),
-		constRetMethod:     newConstRetMethod("(uuid.UUID, error)"),
+		constRetMethod:     newConstRetMethod("(int64, error)"),
 		constBodyMethod: newConstBodyMethod(
 			strings.Join([]string{
 				"db := qs.db.Unscoped().Delete(" + structTypeName + "{}" + ")",
@@ -353,8 +353,8 @@ func NewCountMethod(qsTypeName string) CountMethod {
 	return CountMethod{
 		baseQuerySetMethod: newBaseQuerySetMethod(qsTypeName),
 		namedMethod:        newNamedMethod("Count"),
-		constRetMethod:     newConstRetMethod("(uuid.UUID, error)"),
-		constBodyMethod: newConstBodyMethod(`var count uuid.UUID
+		constRetMethod:     newConstRetMethod("(int64, error)"),
+		constBodyMethod: newConstBodyMethod(`var count int64
 			err := %s.Count(&count).Error
 			return count, err`, qsDbName),
 	}
