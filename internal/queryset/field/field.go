@@ -115,6 +115,7 @@ func (g InfoGenerator) GenFieldInfo(f Field) *Info {
 		}
 	}
 
+	const byteType = "byte"
 	switch t := f.Type().(type) {
 	case *types.Basic:
 		bi.IsString = t.Info()&types.IsString != 0
@@ -123,7 +124,14 @@ func (g InfoGenerator) GenFieldInfo(f Field) *Info {
 			BaseInfo: bi,
 		}
 	case *types.Slice:
-		if t.Elem().String() == "byte" {
+		if t.Elem().String() == byteType {
+			return &Info{
+				BaseInfo: bi,
+			}
+		}
+		return nil
+	case *types.Array:
+		if t.Elem().String() == byteType {
 			return &Info{
 				BaseInfo: bi,
 			}

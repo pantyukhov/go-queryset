@@ -11,14 +11,12 @@ require (
 	github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1 // indirect
 	github.com/jinzhu/now v1.1.1 // indirect
 	github.com/lib/pq v1.0.0 // indirect
-	github.com/mattn/go-sqlite3 v1.14.5 // indirect
-	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
-	github.com/pkg/errors v0.9.1
-	github.com/sergi/go-diff v1.0.0 // indirect
-	github.com/stretchr/testify v1.6.1
-	golang.org/x/build v0.0.0-20201125004639-2e05377d7423 // indirect
-	golang.org/x/crypto v0.0.0-20201124201722-c8d3bf9c5392 // indirect
-	golang.org/x/tools v0.0.0-20201110124207-079ba7bd75cd
+	github.com/mattn/go-sqlite3 v1.10.0 // indirect
+	github.com/pkg/errors v0.8.1
+	github.com/satori/go.uuid v1.2.0
+	github.com/stretchr/testify v1.3.0
+	golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2 // indirect
+	golang.org/x/tools v0.0.0-20190226205152-f727befe758c
 	gopkg.in/DATA-DOG/go-sqlmock.v1 v1.2.0
 	gorm.io/gorm v1.20.7
 )
